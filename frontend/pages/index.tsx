@@ -15,6 +15,7 @@ import RandomInterval from "../data/RandomInterval";
 import FullScreenModal from "../components/FullScreenModal";
 import LotteryModal from "../components/LotteryModal";
 import { Footer } from "../components/Footer";
+import { Button } from "../components/ui/button"
 
 type NumberSpanProps = {
   children: React.ReactNode;
@@ -130,13 +131,10 @@ const Home: NextPage = () => {
       <WalletConnect />
       {isClient && address && (
         <>
-          <button
-            className="mt-2 btn bg-gray-700 text-black disabled:bg-gray-400 disabled:text-gray-500 disabled:cursor-not-allowed"
-            disabled
-            type="button"
+          <Button
           >
             Stop
-          </button>
+          </Button>
         </>
       )}
       <p className="font-mincho mt-16 text-sm text-primary-text">
