@@ -1,0 +1,15 @@
+node_modules
+.env
+.envrc
+coverage
+coverage.json
+typechain
+typechain-types
+
+# Hardhat files
+cache
+artifacts
+lib
+
+cache_forge
+out
